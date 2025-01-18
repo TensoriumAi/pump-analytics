@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Pump Fun Analytics - Signal Identifier
+
+A real-time token analytics platform built with Next.js that provides advanced monitoring and analysis capabilities for cryptocurrency tokens. The application features a powerful in-browser database system for efficient data management and a WebSocket-based real-time update system.
+
+![Demo Video](demo.mp4)
+
+## Features
+
+### Real-Time Token Monitoring
+- Live token price and volume tracking
+- Automatic token discovery and tracking
+- Smart watch-list management
+- Real-time price alerts and notifications
+
+### Advanced Trigger System
+- Configurable trigger conditions
+- Watch/Unwatch automation
+- Multi-condition evaluation
+- Queue-based trigger processing
+- Historical trade analysis
+
+### Performance Optimized
+![Performance Analysis](perf.gif)
+
+The application utilizes an advanced in-browser database system powered by Dexie.js (IndexedDB wrapper) to manage large datasets efficiently while maintaining smooth performance:
+
+- Intelligent data pruning system
+- Configurable memory management
+- Optimized trade history tracking
+- Efficient WebSocket subscription handling
+- Background queue processing for triggers
+
+## Technology Stack
+
+- **Frontend**: Next.js 14 with TypeScript
+- **State Management**: Custom stores with optimized updates
+- **Database**: IndexedDB via Dexie.js
+- **Real-time Updates**: WebSocket with automatic reconnection
+- **UI Components**: Radix UI with Tailwind CSS
+- **Charts**: Lightweight custom charting system
 
 ## Getting Started
 
-First, run the development server:
-
+1. Install dependencies:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Start the development server:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Performance Considerations
 
-## Learn More
+The application is designed to handle large amounts of real-time data while maintaining responsive performance:
 
-To learn more about Next.js, take a look at the following resources:
+- **Memory Management**: Automatic pruning of historical data to prevent memory bloat
+- **Efficient Updates**: Batched state updates to minimize UI re-renders
+- **Queue Processing**: Background processing of triggers to maintain UI responsiveness
+- **Smart Subscriptions**: Automatic WebSocket subscription management
+- **IndexedDB Optimization**: Efficient database queries and indexed lookups
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Browser Support
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The application requires a modern browser with support for:
+- IndexedDB
+- WebSocket
+- Web Workers (for background processing)
+- ES6+ JavaScript features
 
-## Deploy on Vercel
+## Contributing
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Contributions are welcome! Please read our contributing guidelines before submitting pull requests.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+MIT License - See LICENSE file for details
