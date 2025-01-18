@@ -2,7 +2,7 @@
 
 A real-time token analytics platform built with Next.js that provides advanced monitoring and analysis capabilities for cryptocurrency tokens. The application features a powerful in-browser database system for efficient data management and a WebSocket-based real-time update system.
 
-![Demo Video](demo.mp4)
+![Demo](demo.gif)
 
 ## Features
 
